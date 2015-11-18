@@ -60,6 +60,37 @@ x = *pa //copy the contents of a[0] to x
 Note that char s[] and char *s are equivalent. 
 
 ## 5.4 Address Arithmetic
+1. Pointers and integers are only interchangeable at zero.
+2. adding p+n: address of the nth object beyond the one p currently points to.
+3. subtract q-p+1: number of elements from p to q inclusive(p and q point to elements of same array, p<q)
+4. Pointer arithmetic is consistent. If p were a pointer to float, p++ would advance to next float.
+
+Summary:
+* Legal: adding/subtracting a pointer and an integer, subtracting or comparing two points to members of same array, assigning and comparing to zero.
+* All others are illegal(e.g. add/multiply/divide pointers, add float/double to them, assign a pointer of one type to a pointer of another type without cast except for void *)
+* 
+## 5.5 Character Pointers and Functions
+1. String constant is an array of characters. Length is one more than the number of characters because of the null character '\0' signifying the end.
+2. Access character string through a character pointer.
+
+```
+char amessage[] = "hello" //an array
+char *pmessage = "hello" //a pointer
+```
+
+## 5.6 Pointer Arrays; Pointers to Pointers
+
+## 5.7 Multi-dimensional Arrays
+
+## 5.8 Initialization of Pointer Arrays
+
+## 5.9 Pointers vs Multi-dimensional Arrays
+```
+int a[10][20] //multi-dimensional array
+int *b[10] //allocats 10 pointers and does not initialize them, each pointer can point to array of different size
+```
+
+## 5.11 Pointers to Functions
 
 
 # Chapter 6 - Structures
