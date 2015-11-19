@@ -68,7 +68,8 @@ Note that char s[] and char *s are equivalent.
 Summary:
 * Legal: adding/subtracting a pointer and an integer, subtracting or comparing two points to members of same array, assigning and comparing to zero.
 * All others are illegal(e.g. add/multiply/divide pointers, add float/double to them, assign a pointer of one type to a pointer of another type without cast except for void *)
-* 
+
+
 ## 5.5 Character Pointers and Functions
 1. String constant is an array of characters. Length is one more than the number of characters because of the null character '\0' signifying the end.
 2. Access character string through a character pointer.
