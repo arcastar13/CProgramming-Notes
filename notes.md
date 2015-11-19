@@ -92,6 +92,23 @@ int *b[10] //allocats 10 pointers and does not initialize them, each pointer can
 
 ## 5.11 Pointers to Functions
 
+## 5.12 Complicated Declarations
+```
+int *f() //function returning pointer to int
+int (*pf)() //pointer to function returning int
+```
+
+more examples:
+```
+1. char **argv //pointer to pointer to char
+2. int (*daytab)[13] //pointer to array[13] of int
+3. int *daytab[13] //array[13] of pointer to int
+4. void *comp() //function returning pointer to void
+5. void (*comp){} //pointer to function returning void
+6. char (*(*x())[])() //function returning pointer to array[] of pointer to function returning char
+7. char(*(*x[3])())[5] //array[3] of pointer to function returning pointer to array[5] of char
+```
+
 
 # Chapter 6 - Structures
 
